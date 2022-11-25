@@ -111,9 +111,20 @@ div p{
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: var(--padding-container);
+  padding: 0;
   
 }
+div p{
+  margin: 35px;
+}
+.partedos{
+  list-style: none;
+  color: #150050;
+}
+div ul li{
+  margin: 35px;
+}
+
 
 .acordeonvertical>ul>li {
   display:block;
@@ -121,11 +132,11 @@ div p{
   margin: 0;
   padding: 0;
   list-style:none;
-  height: 55px;
-  width: 98%;
+  height: 60px;
+  width: 100%;
   max-width: 100%;
   background-color: rgb(239, 222, 197);
-  border-radius: 20px;
+  border-radius: 15px;
   transition: height 0.1s ease-in-out;
 }
 .acordeonvertical>ul>li>h3 {
@@ -142,12 +153,11 @@ div p{
 
 .acordeonvertical>ul>li>div {
   margin: 0px;
-  overflow:scroll;
   padding: 0px;
   height: 100%;
 }
 .acordeonvertical>ul>li:hover {
-  height: 300px;
+  height: 100%;
 }
 .acordeonvertical>ul>li:hover>h3 {
   color: rgb(0, 54, 96);
@@ -159,10 +169,10 @@ div p{
 }
 
 /*VIDEO DESPLEGABLE 01*/
-.acordeonvertical p iframe{
+.acordeonvertical iframe{
   text-align: right;
   float: left;
-  border: 15px solid transparent;
+  border-right: 40px solid transparent;
 }
 
 /*IMAGENES DESPLEGABLES*/
@@ -173,4 +183,24 @@ div p{
   color: transparent; 
   float: right;
 }
- 
+.imagentres{
+  float: left;
+  border-radius: 0%;
+  border: 10px solid transparent;
+}
+.imagencuatro{
+  float: right;
+  border-radius: 0%;
+  border: 15px solid transparent;
+}
+
+.imagencinco{
+  float: right;
+  border-radius: 0%;
+  border: 15px solid transparent;
+}
+.imagenseis{
+  float: left;
+  border-radius: 0%;
+  border: 15px solid transparent;
+}
