@@ -11,9 +11,11 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
+
   padding: var(--padding-container);
+  
 }
+
 
 .hero {
   width: 100%;
@@ -27,6 +29,13 @@ body {
 }
 .hero__title__ref{
   color: #001A49;
+}
+p{
+  color: #000;
+}
+
+a{
+  color: #000;
 }
 
 .hero::before {
@@ -91,60 +100,34 @@ body {
 }
 
 /*REDES*/
-
-.social-sharing {
-	display: block;
-	position:fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-}
-.social-sharing ul.menu-social {
-	list-style: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: nowrap;
-	-ms-flex-wrap: nowrapwrap;
-	flex-wrap: nowrap;
+.social {
+	position: absolute; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
-.social-sharing ul.menu-social li {
-	flex: 0 1 40px;
-	height: 40px;
-}
-.social-sharing ul.menu-social li.newsletter {
-	flex: 1 1 auto;
-	line-height: 40px;
-  position: left;
-	background-color: #f3a9a9;
-	background-image: repeating-linear-gradient(135deg, #dc5d4e 0px, #820d00 5px, transparent 5px, transparent 10px, #e1f3ff 10px, #e1f3ff 15px, transparent 15px, transparent 20px);
-}
-.social-sharing ul.menu-social li.next {
-	flex: 1 1 auto;
-}
-ul.menu-social li a::before {
-	content: "\f135";
-	display: inline-block;
-	font-family: FontAwesome;
-	font-size: 20px;
-	vertical-align: middle;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	line-height: 40px;
-}
-ul.menu-social li a[href*="facebook.com"]::before {
-	content: "\f09a";
-}
-ul.menu-social li a[href*="twitter.com"]::before {
-	content: "\f099";
-}
-ul.menu-social li a[href*="pinterest.com"]::before {
-	content: "\f231";
-}
-ul.menu-social li a[href*="whatsapp://send"]::before {
-	content: "\f232";}
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 20px 30px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook2 {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-instagram {background: #d9329c;}
+	.social ul li .icon-linkedin {background: #1840ae;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 25px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
