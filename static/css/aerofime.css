@@ -89,7 +89,88 @@ body {
 div img{
   border-radius: 30%;
 }
+/*TITULOS*/
+.hero__t1{
+  font-style:italic;
+  color: #153462;
+}
+div h3{
+  font-style:inherit;
+}
 
-/*redes*/
+/*PARRAFOS*/
+div p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/* ESTILO DE DESPLEGABLES*/
+
+.acordeonvertical>ul {
+  width: 90%;
+  list-style: none;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+  
+}
+
+.acordeonvertical>ul>li {
+  display:block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  height: 55px;
+  width: 98%;
+  max-width: 100%;
+  background-color: rgb(239, 222, 197);
+  border-radius: 20px;
+  transition: height 0.1s ease-in-out;
+}
+.acordeonvertical>ul>li>h3 {
+  display:block;
+  margin: 0;
+  padding: 25px;
+  height: 25px;
+  border-top: #b4906f 4px solid;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: rgb(0, 54, 96);
+  background:#c9ab8e;
+}
+
+.acordeonvertical>ul>li>div {
+  margin: 0px;
+  overflow:scroll;
+  padding: 0px;
+  height: 100%;
+}
+.acordeonvertical>ul>li:hover {
+  height: 300px;
+}
+.acordeonvertical>ul>li:hover>h3 {
+  color: rgb(0, 54, 96);
+  background: rgb (125, 165, 205);
+  font-size: 100%;
+}
+.acordeonvertical>ul>li>h3:hover {
+  cursor: pointer;
+}
+
+/*VIDEO DESPLEGABLE 01*/
+.acordeonvertical p iframe{
+  text-align: right;
+  float: left;
+  border: 15px solid transparent;
+}
+
+/*IMAGENES DESPLEGABLES*/
+.imagenesdos {
+  width: 450; 
+  height: 180; 
+  border-left: 40px solid; 
+  color: transparent; 
+  float: right;
+}
  
